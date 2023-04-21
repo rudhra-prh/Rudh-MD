@@ -65,8 +65,7 @@ const now = new Date();
         } else {
           greeting = "Good Evening"; //good evening Konbanwa
         }
-      let textHelpMenu = `\n
- ⊷══⊷《 𝑅 𝑈 𝐷 𝛨 𝑅 𝛥 》⊷══⊷
+      let textHelpMenu = ` ⊷══⊷《 𝑅 𝑈 𝐷 𝛨 𝑅 𝛥 》⊷══⊷
 ╭─────────────────⊷❍
 │ *ʜᴇʏ* 😉 *${pushName}* ,
 │〄 *ʙᴏᴛɴᴀᴍᴇ* : ʀᴜᴅʜʀᴀ-ᴍᴅ
@@ -302,7 +301,7 @@ const now = new Date();
 
       textHelpMenu += `  ${botName}  \n`;
 
-      await Miku.sendMessage(m.from, {video: { url: botVideo }, gifPlayback: true, caption: textHelpMenu,}, { quoted: m });
+      await Miku.sendMessage(m.from, {image: { url: botImage1 }, caption: textHelpMenu,}, { quoted: m });
     }
   },
 };
