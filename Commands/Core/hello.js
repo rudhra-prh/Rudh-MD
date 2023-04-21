@@ -2,7 +2,7 @@ module.exports = {
     name: "hi",
     alias: ["hello","alive","info"],
     desc: "Say hello to bot.",
-    react: "🧣",
+    react: "👋",
     category: "Core",
     start: async(Miku, m,{pushName,prefix}) => {
         const pad = (s) => (s < 10 ? "0" : "") + s;
@@ -14,5 +14,6 @@ module.exports = {
         };
         const uptime = () => formatTime(process.uptime());
         await Miku.sendMessage(m.from,{image:{url:botImage1},caption:`\nKonichiwa *${pushName}* senpai, I am *${botName}* bot. type *${prefix}help* to get my full command list.\n\n_🧩 Server Uptime:_ *${uptime()}*\n_🎀 Status:_ *Operational*\n`},{quoted:m})
+        footer: `ʀᴜᴅʜʀᴀ`),
     }
 }
