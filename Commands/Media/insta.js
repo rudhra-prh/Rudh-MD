@@ -2,7 +2,7 @@ const axios = require("axios");
 
 module.exports = {
   name: "insta",
-  alias: ["instagram", "instadl2", "ig", "igvid2", "igdl"],
+  alias: ["instagram", "insta", "ig", "igvid2", "igdl"],
   desc: "To download an instagram video",
   category: "Media",
   usage: `insta <video link>`,
@@ -11,7 +11,7 @@ module.exports = {
     if (!args[0])
       return Miku.sendMessage(
         m.from,
-        { text: `Please provide a Instagram Video link !` },
+        { text: `ᴘʟᴇᴀꜱᴇ ᴘʀᴏᴠɪᴅᴇ ᴀ ɪɴꜱᴛᴀɢʀᴀᴍ ᴠɪᴅᴇᴏ ʟɪɴᴋ !` },
         { quoted: m }
       );
     if (!args[0].includes("instagram.com"))
@@ -23,7 +23,7 @@ module.exports = {
     
 
       var queryURL = args.join(" ");
-      m.reply("*ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ...*")
+      m.reply("*_ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ..._*")
       let res = await axios.get("https://fantox001-scrappy-api.vercel.app/instadl?url=" + queryURL)
       const scrappedURL = res.data.videoUrl
       
