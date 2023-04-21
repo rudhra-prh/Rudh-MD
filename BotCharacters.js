@@ -1,12 +1,12 @@
 global.charID0 = {
     botName : "ʀᴜᴅʜʀᴀ ᴍᴅ",
     botVideo : "https://graph.org/file/e3b2ee218b98b8679bf98.mp4",
-    botImage1 : "https://i.imgur.com/XQFNJDp.jpeg,
-    botImage2 : "https://i.imgur.com/XQFNJDp.jpeg,
-    botImage3 : "https://i.imgur.com/XQFNJDp.jpeg,
-    botImage4 : "https://i.imgur.com/XQFNJDp.jpeg,
-    botImage5 : "https://i.imgur.com/XQFNJDp.jpeg,
-    botImage6 : "https://i.imgur.com/XQFNJDp.jpeg,
+    botImage1 : "https://i.imgur.com/XQFNJDp.jpeg",
+    botImage2 : "https://i.imgur.com/XQFNJDp.jpeg",
+    botImage3 : "https://i.imgur.com/XQFNJDp.jpeg",
+    botImage4 : "https://i.imgur.com/XQFNJDp.jpeg",
+    botImage5 : "https://i.imgur.com/XQFNJDp.jpeg",
+    botImage6 : "https://i.imgur.com/XQFNJDp.jpeg",
 }
 
 global.charID1 = {
