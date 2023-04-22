@@ -2,8 +2,8 @@ const ttt = require("google-tts-api");
 
 module.exports = {
   name: "sayml",
-  alias: ["speakml", "saymalayalam", "ttsml", "ttsmalayalam"],
-  desc: "Say somethong using bot in Japanese accent.",
+  alias: ["speakml", "saymalayalam", "ttsml", "tml"],
+  desc: "Say somethong using bot in malayalam accent.",
   usage: "saymalayalam <text>",
   react: "👁️‍🗨️",
   category: "Essentials",
@@ -13,7 +13,7 @@ module.exports = {
     } else if (args[0]) {
       message = args.join(" ");
     } else {
-      message = `Please provide me a text to say ${pushName}, !`;
+      message = `${pushName},! പറയാനുള്ള ഒരു വാചകം ദയവായി നൽകുക`;
     }
 
     const texttospeechurl = ttt.getAudioUrl(message, {
