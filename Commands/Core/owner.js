@@ -21,7 +21,7 @@ module.exports = {
       let xyz = xy.concat(yz);
 
       ment = [ownerList.map((owner) => owner + "@s.whatsapp.net"), mention];
-      let textM = `          ⦿----❮ *OWNER* ❯----⦿\n\n`;
+      let textM = `             ⦿----❮ *OWNER* ❯----⦿\n\n`;
 
       if (ownerList.length == 0) {
         textM = "*No Mods Added !*";
@@ -38,7 +38,7 @@ module.exports = {
       }
 
       if (modlistString != "" || ownerList.length != 0) {
-        textM += `\n\n⚠️ *ᴅᴏɴ'ᴛ ꜱᴘᴀᴍ ᴛʜᴇᴍ ᴛᴏ ᴀᴠᴏɪᴅ ʙʟᴏᴄᴋɪɴɢ !*\n ꜰᴏʀ ᴀɴʏ ʜᴇʟᴘ, ᴛʏᴘᴇ *${prefix}support* ᴀɴᴅ ᴀꜱᴋ ɪɴ ɢʀᴏᴜᴘ.\n\n*💫 ᴛʜᴀɴᴋꜱ ꜰᴏʀ ᴜꜱɪɴɢ ${botName}. *\n`;
+        textM += `\n\n⚠️ *ᴅᴏɴ'ᴛ ꜱᴘᴀᴍ ᴛʜᴇᴍ ᴛᴏ ᴀᴠᴏɪᴅ ʙʟᴏᴄᴋɪɴɢ !*\n ꜰᴏʀ ᴀɴʏ ʜᴇʟᴘ, ᴛʏᴘᴇ *${prefix}support* ᴀɴᴅ ᴀꜱᴋ ɪɴ ɢʀᴏᴜᴘ.\n\n  *ᴛʜᴀɴᴋꜱ ꜰᴏʀ ᴜꜱɪɴɢ ${botName}.*\n`;
       }
 
       return Miku.sendMessage(
