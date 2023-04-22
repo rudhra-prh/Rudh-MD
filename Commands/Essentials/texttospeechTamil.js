@@ -1,18 +1,17 @@
 const ttt = require("google-tts-api");
 
 module.exports = {
-  name: "saybengali",
+  name: "sayta",
   alias: [
-    "speakbengali",
-    "saybengali",
-    "sayinbengali",
-    "saybangla",
-    "speakbangla",
-    "sayinbangla",
+    "speaktamil",
+    "saytamil",
+    "ttsta",
+    "tta",
+    "ttstamil",
   ],
-  desc: "Say somethong using bot in Bengali accent.",
-  usage: "saybengali <text>",
-  react: "🍁",
+  desc: "Say somethong using bot in tamil accent.",
+  usage: "saytamil <text>",
+  react: "👁️‍🗨️",
   category: "Essentials",
   start: async (Miku, m, { pushName, prefix, args, text, mime }) => {
     if (!text && m.quoted) {
@@ -20,11 +19,11 @@ module.exports = {
     } else if (args[0]) {
       message = args.join(" ");
     } else {
-      message = `Amay bolar jonno kono text dao ${pushName} senpai !`;
+      message = `${pushName},! தயவு செய்து எனக்கு ஒரு உரையை வழங்கவும்`;
     }
 
     const texttospeechurl = ttt.getAudioUrl(message, {
-      lang: "bn",
+      lang: "ta",
       slow: false,
       host: "https://translate.google.com",
     });
