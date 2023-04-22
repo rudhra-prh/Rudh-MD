@@ -32,7 +32,7 @@ module.exports = {
     await Miku.sendMessage(
       m.from,
       {
-        image: fs.readFileSync("./Assets/Img/card2.png"),
+        image: fs.readFileSync("./Media/Img/card2.png"),
         caption: `\n🏦 *${pushname}'s Bank*:\n\n🪙 Balance: ${balance.bank}/${balance.bankCapacity}\n\n\n*Wealth: ${role}*\n`,
       },
       { quoted: m }
