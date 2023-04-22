@@ -61,7 +61,7 @@ module.exports = {
       await Miku.sendMessage(
         m.from,
         {
-          image: fs.readFileSync("./Assets/Img/card.png"),
+          image: fs.readFileSync("./Media/Img/card.png"),
           caption: `*📈 You won 💴 ${twice}*`,
         },
         { quoted: m }
