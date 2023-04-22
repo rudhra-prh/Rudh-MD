@@ -1,11 +1,11 @@
 const ttt = require("google-tts-api");
 
 module.exports = {
-  name: "sayjapanese",
-  alias: ["speakjapanese", "sayjapanese", "sayinjapnese", "sayja"],
+  name: "sayml",
+  alias: ["speakml", "saymalayalam", "ttsml", "ttsmalayalam"],
   desc: "Say somethong using bot in Japanese accent.",
-  usage: "sayjapanese <text>",
-  react: "🍁",
+  usage: "saymalayalam <text>",
+  react: "👁️‍🗨️",
   category: "Essentials",
   start: async (Miku, m, { pushName, prefix, args, text, mime }) => {
     if (!text && m.quoted) {
@@ -13,11 +13,11 @@ module.exports = {
     } else if (args[0]) {
       message = args.join(" ");
     } else {
-      message = `Please provide me a text to say ${pushName} senpai !`;
+      message = `Please provide me a text to say ${pushName}, !`;
     }
 
     const texttospeechurl = ttt.getAudioUrl(message, {
-      lang: "ja",
+      lang: "ml",
       slow: false,
       host: "https://translate.google.com",
     });
