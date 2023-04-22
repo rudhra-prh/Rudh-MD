@@ -24,7 +24,7 @@ module.exports = {
       await Miku.sendMessage(
         m.from,
         {
-          image: fs.readFileSync("./Assets/Img/card.png"),
+          image: fs.readFileSync("./Media/Img/card.png"),
           caption: `\n${pushName} already claimed your daily revenue today, Come back in ${daily.cdL} to claim again 🫡`,
         },
         { quoted: m }
