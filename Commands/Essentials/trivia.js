@@ -5,7 +5,7 @@ module.exports = {
   alias: ["question"],
   desc: "To get some question answers.",
   usage: "question easy/medium/hard",
-  react: "🍁",
+  react: "❔",
   category: "Essentials",
   start: async (Miku, m, { pushName, prefix, args, text }) => {
     if (!args[0])
@@ -18,7 +18,7 @@ module.exports = {
         `https://opentdb.com/api.php?amount=1&difficulty=${query}&type=multiple`
       )
       .then((response) => {
-        const text = `            *『  Question Answers  』*\n\n🎀  *Category:* ${response.data.results[0].category}\n❄  *Difficulty:* ${response.data.results[0].difficulty}\n\n📒  *Question:* ${response.data.results[0].question}\n\n🎋  *Answer:* ${response.data.results[0].correct_answer}\n `;
+        const text = `            ❮  *Question Answers*  ❯\n\n❏  *Category:* ${response.data.results[0].category}\n❏  *Difficulty:* ${response.data.results[0].difficulty}\n\n❏  *Question:* ${response.data.results[0].question}\n\n❏  *Answer:* ${response.data.results[0].correct_answer}\n `;
 
         Miku.sendMessage(
           m.from,
