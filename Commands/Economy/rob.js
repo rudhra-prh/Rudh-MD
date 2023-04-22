@@ -44,7 +44,7 @@ module.exports = {
             case 'rob':
                 await eco.deduct(user2, cara, amount);
                 await eco.give(user1, cara, amount); 
-                return Miku.sendMessage(m.from, { text: `*🤑 You have stolen ${amount} successfully .🗡️*` }, { quoted: m });
+                return Miku.sendMessage(m.from, { text: `*🤑 You have stolen ${amount} successfully. ✓*` }, { quoted: m });
             case 'caught':
                 await eco.deduct(user1, cara, balance1.wallet); 
                 return Miku.sendMessage(m.from, { text: `*Sorry FBI👮 caught up with you, you lost all 🪙 in wallet.*` }, { quoted: m });
