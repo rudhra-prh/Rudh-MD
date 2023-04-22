@@ -10,11 +10,11 @@ module.exports = {
   alias: ["daily"],
   category: "Economy",
   react: "💷",
-  start: async (Miku, m, { text, prefix }) => {
+  start: async (Miku, m, { text, pushName, prefix }) => {
     if (!m.isGroup)
       return Miku.sendMessage(
         m.from,
-        { text: "*Group command " },
+        { text: "*Group command*" },
         { quoted: m }
       );
     let user = m.sender;
