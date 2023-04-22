@@ -2,10 +2,10 @@ const ttt = require("google-tts-api");
 
 module.exports = {
   name: "sayhindi",
-  alias: ["speakhindi", "sayhindi", "sayinhindi"],
+  alias: ["speakhindi", "sayhi", "ttshi", "sayinhindi"],
   desc: "Say somethong using bot in Hindi accent.",
   usage: "sayhindi <text>",
-  react: "🍁",
+  react: "👁️‍🗨️",
   category: "Essentials",
   start: async (Miku, m, { pushName, prefix, args, text, mime }) => {
     if (!text && m.quoted) {
