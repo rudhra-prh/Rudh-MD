@@ -9,11 +9,11 @@ module.exports = {
   alias: ["deposit"],
   category: "Economy",
   react: "💵",
-  start: async (Miku, m, { text, prefix, args }) => {
+  start: async (Miku, m, { text, pushName, prefix, args }) => {
     if (!text) {
       return Miku.sendMessage(
         m.from,
-        { text: `Baka!! Provide the 💰amount you want to deposit!` },
+        { text: `${pushName} Provide the 💰amount you want to deposit!` },
         { quoted: m }
       );
     }
@@ -26,8 +26,8 @@ module.exports = {
     await Miku.sendMessage(
       m.from,
       {
-        image: fs.readFileSync("./Assets/Img/card.png"),
-        caption: `\n⛩️ Sender: ${m.pushName}\n\n🍀Successfully Deposited 💴 ${deposit.amount} to your bank.\n`,
+        image: fs.readFileSync("./Media/Img/card.png"),
+        caption: `\n*❏* Sender: ${m.pushName}\n\n*❏* Successfully✓ Deposited 💴 ${deposit.amount} to your bank.\n`,
       },
       { quoted: m }
     );
