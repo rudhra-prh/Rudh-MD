@@ -15,7 +15,7 @@ module.exports = {
     if (!text && !m.quoted) {
       return Miku.sendMessage(
         m.from,
-        { text: `Please tag any user ${pushName} senpai 🤦‍♂️ !` },
+        { text: `Please tag any user ${pushName} !` },
         { quoted: m }
       );
     } else if (m.quoted) {
