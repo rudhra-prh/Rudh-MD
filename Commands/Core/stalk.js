@@ -2,12 +2,12 @@ module.exports = {
   name: "stalk",
   alias: ["nowa", "stalkwhatsapp", "stalknumber"],
   desc: "Search for a whatsapp number in a given range",
-  usage: "stalk 9181011564xxx",
-  react: "🍁",
+  usage: "stalk 918089789xxx",
+  react: "🪄",
   category: "Core",
   start: async (Miku, m, { pushName, args, prefix }) => {
     if (!args[0])
-      return m.reply(`Use command like: ${prefix}stalk 9181011564xxx`);
+      return m.reply(`Use command like: ${prefix}stalk 918089789xxx`);
     var inputnumber = args[0];
     if (!inputnumber.includes("x")) return m.reply("You didnot added x");
     if (inputnumber.includes("xxxx")) return m.reply("Maximum 3 'x' are allowed ! To avoid ban !");
@@ -30,9 +30,9 @@ module.exports = {
         }else if (random_length == 4) {
           randomxx = 10000
         }
-    var nomerny = `        *『 List of Whatsapp Numbers 』*\n\n`;
-    var nobio = `\n🎀 *Bio:* Hey there! I am using WhatsApp.\n\n`;
-    var nowhatsapp = `\n🎀 *Numbers with no WhatsApp account within the range you provided*\n\n`;
+    var nomerny = `        *❮ List of Whatsapp Numbers ❯*\n\n`;
+    var nobio = `\n❏ *Bio:* Hey there! I am using WhatsApp.\n\n`;
+    var nowhatsapp = `\n❏ *Numbers with no WhatsApp account within the range you provided*\n\n`;
 
     for (let i = 0; i < randomxx; i++) {
         var nu = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
@@ -64,7 +64,7 @@ module.exports = {
         if (anu1 == '401' || anu1.status.length == 0) {
         nobio += `wa.me/${anu[0].jid.split("@")[0]}\n`
         } else {
-        nomerny += `🎀 *Number:* wa.me/${anu[0].jid.split("@")[0]}\n🔹 *Bio :* ${anu1.status}\n\n`
+        nomerny += `❏ *Number:* wa.me/${anu[0].jid.split("@")[0]}\n♢ *Bio :* ${anu1.status}\n\n`
         }
         } catch {
         nowhatsapp += `${number0}${i}${number1}\n`
