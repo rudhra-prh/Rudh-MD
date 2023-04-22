@@ -25,7 +25,7 @@ module.exports = {
         m.from,
         {
           image: fs.readFileSync("./Assets/Img/card.png"),
-          caption: `\n🧧 You already claimed your daily revenue today, Come back in ${daily.cdL} to claim again 🫡`,
+          caption: `\n${pushName} already claimed your daily revenue today, Come back in ${daily.cdL} to claim again 🫡`,
         },
         { quoted: m }
       );
