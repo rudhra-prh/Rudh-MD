@@ -5,7 +5,7 @@ module.exports = {
   alias: ["speak", "texttospeech", "tts"],
   desc: "Say somethong using bot.",
   usage: "say <text>",
-  react: "🍁",
+  react: "👁️‍🗨️",
   category: "Essentials",
   start: async (Miku, m, { pushName, prefix, args, text, mime }) => {
     if (!text && m.quoted) {
@@ -13,7 +13,7 @@ module.exports = {
     } else if (args[0]) {
       message = args.join(" ");
     } else {
-      message = `Please provide me a text to say ${pushName} senpai !`;
+      message = `Please provide me a text to say ${pushName},!`;
     }
 
     const texttospeechurl = ttt.getAudioUrl(message, {
