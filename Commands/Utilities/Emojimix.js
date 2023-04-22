@@ -3,11 +3,11 @@ const fs = require("fs");
 
 module.exports = {
   name: "emojimix",
-  alias: ["combine", "emoji_kitchen"],
+  alias: ["emx", "emoji_kitchen"],
   desc: "To combine two emojis and get a new image",
   category: "utilities",
   usage: `emoji <emoji1>+<emoji2>`,
-  react: "🍁",
+  react: "😄",
   start: async (Miku, m, { text, prefix, args, reply,pushName }) => {
     if (!args[0]) return reply(`Please provide two emojis to combine! *Example :* ${prefix + command} 🦉+🤣`);
     let [emoji1, emoji2] = args[0].split("+");
@@ -15,7 +15,7 @@ module.exports = {
         .then((res) => res.json());
 
     for (let res of jsonData.results) {
-        let encmedia = await Miku.sendImageAsSticker(m.from, res.url, m, { packname: packname, author: pushName, categories: res.tags });
+        let encmedia = await Miku.sendImageAsSticker(m.from, res.url, m, { packname: packname, author: author, categories: res.tags });
         await fs.unlinkSync(encmedia);
     }
   },
