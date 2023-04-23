@@ -15,7 +15,7 @@ module.exports = {
         const uptime = () => formatTime(process.uptime());
         await Miku.sendMessage(m.from,{image:{url:botImage1},
         caption:`\n        *ʜᴇʏ👋* *${pushName}* \n    ɪ ᴀᴍ *${botName}* ʙᴏᴛ.\n\n*⿻*   _Server Uptime:_*${uptime()}*\n*⿻*   _Status:_ *Operational*\n╭─────────────────»\n│        *ɪꜰ ʏᴏᴜ ɴᴇᴇᴅ ʜᴇʟᴘ*\n│       *ᴛʏᴘᴇ* 💬 *${prefix}help* *${prefix}menu*\n│               *ᴛʜᴀɴᴋ ʏᴏᴜ*\n╰─────────────────»\n`,
-        footer: "ʀᴜᴅʜʀᴀ ᴍᴅ"},
+        footer: `${botName}`,
         {quoted:m})
     }
 }
