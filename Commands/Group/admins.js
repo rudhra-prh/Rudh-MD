@@ -4,7 +4,7 @@ module.exports = {
   desc: "Tag all group Admins.",
   category: "Group",
   usage: "admins <your message>",
-  react: "🍁",
+  react: "📢",
   start: async (
     Miku,
     m,
