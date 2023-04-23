@@ -24,7 +24,7 @@ module.exports = {
 
     Miku.sendMessage(
       m.from,
-      { audio: { url: texttospeechurl }, { ptt: true, mimetype: 'audio/ogg; codecs=opus' },
+      { audio: { url: texttospeechurl }, ptt: true, mimetype: "audio/ogg; codecs=opus" },
       { quoted: m }
     ).catch((e) => {
       m.reply(`An error Occurd !`);
