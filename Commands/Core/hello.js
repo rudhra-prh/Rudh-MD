@@ -14,10 +14,10 @@ module.exports = {
         };
         const uptime = () => formatTime(process.uptime());
         m.reply(`\n        *ʜᴇʏ👋* *${pushName}* \n    ɪ ᴀᴍ *${botName}* ʙᴏᴛ.\n\n*⿻*   _Server Uptime:_*${uptime()}*\n*⿻*   _Status:_ *Operational*\n╭─────────────────»\n│        *ɪꜰ ʏᴏᴜ ɴᴇᴇᴅ ʜᴇʟᴘ*\n│       *ᴛʏᴘᴇ* 💬 *${prefix}help* *${prefix}menu*\n│               *ᴛʜᴀɴᴋ ʏᴏᴜ*\n╰─────────────────»\n`)
-        let buttons = [
+        const buttons = [
         {buttonId: `owner`, buttonText: {displayText: 'Owner'}, type: 1}
         ]
-        let buttonMessage = {
+        const buttonMessage = {
         image: {url:botImage1},
         jpegThumbnail: log0,
         caption: teks,
@@ -27,12 +27,12 @@ module.exports = {
         contextInfo:{externalAdReply:{
         title:"I deserve something for my hardwork",
         body: "Click to donate", 
-        thumbnail: fs.readFileSync("Media/Img/BG.jpg"),
+        thumbnail: fs.readFileSync("Media/Img/rudhthumb.png"),
         mediaType:1,
         mediaUrl: 'https://i.imgur.com/XQFNJDp.jpeg',
         sourceUrl: "https://instagram.com/princerudh"
         }}
         }
-        Miku.sendMessage(m.from, buttonMessage, { quoted: m })
+        await Miku.sendMessage(m.from, buttonMessage, { quoted: m })
             }
 }
