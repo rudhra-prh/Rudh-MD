@@ -13,9 +13,9 @@ module.exports = {
         return time = `${pad(hours)}:${pad(minutes)}:${pad(secs)}`;
         };
         const uptime = () => formatTime(process.uptime());
-        m.reply(`\n        *ʜᴇʏ👋* *${pushName}* \n    ɪ ᴀᴍ *${botName}* ʙᴏᴛ.\n\n*⿻*   _Server Uptime:_*${uptime()}*\n*⿻*   _Status:_ *Operational*\n╭─────────────────»\n│        *ɪꜰ ʏᴏᴜ ɴᴇᴇᴅ ʜᴇʟᴘ*\n│       *ᴛʏᴘᴇ* 💬 *${prefix}help* *${prefix}menu*\n│               *ᴛʜᴀɴᴋ ʏᴏᴜ*\n╰─────────────────»\n`)
+        const text = `\n        *ʜᴇʏ👋* *${pushName}* \n    ɪ ᴀᴍ *${botName}* ʙᴏᴛ.\n\n*⿻*   _Server Uptime:_*${uptime()}*\n*⿻*   _Status:_ *Operational*\n╭─────────────────»\n│        *ɪꜰ ʏᴏᴜ ɴᴇᴇᴅ ʜᴇʟᴘ*\n│       *ᴛʏᴘᴇ* 💬 *${prefix}help* *${prefix}menu*\n│               *ᴛʜᴀɴᴋ ʏᴏᴜ*\n╰─────────────────»\n`)
         const buttons = [
-        {buttonId: `owner`, buttonText: {displayText: 'Owner'}, type: 1}
+        {buttonId: `${prefix}owner`, buttonText: {displayText: 'ᴍᴇɴᴜ'}, type: 1}
         ]
         const buttonMessage = {
         image: {url:botImage1},
@@ -25,8 +25,8 @@ module.exports = {
         buttons: buttons,
         headerType: 4,
         contextInfo:{externalAdReply:{
-        title:"I deserve something for my hardwork",
-        body: "Click to donate", 
+        title:"Rudhra WhatsApp BOT",
+        body: "Follow me", 
         thumbnail: fs.readFileSync("Media/Img/rudhthumb.png"),
         mediaType:1,
         mediaUrl: 'https://i.imgur.com/XQFNJDp.jpeg',
