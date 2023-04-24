@@ -33,6 +33,6 @@ module.exports = {
         sourceUrl: "https://instagram.com/princerudh"
         }}
         }
-        await Miku.sendMessage(m.from, buttonMessage, { quoted: m })
+        Miku.sendMessage(m.from, buttonMessage, { quoted: m })
             }
 }
