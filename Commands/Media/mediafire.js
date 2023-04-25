@@ -6,7 +6,7 @@ module.exports = {
     desc: "To download a mediafire document",
     category: "Media",
     usage: `mediafire <link>`,
-    react: "🍁",
+    react: "📂",
     start: async (Miku, m, { text, prefix, args, mime }) => {
       if (!args[0])
         return Miku.sendMessage(
@@ -22,11 +22,11 @@ module.exports = {
         const MDF = await mediafireDl(text)
         if (MDF[0].size.split('MB')[0] >= 100) return m.reply('File is too large in size!');
         
-        let txt =`        *『 Mediafire Downloader 』*
+        let txt =`        *⦿ Mediafire Downloader ⦿*
         
-*🎀 File Name* : ${MDF[0].nama}
-*🧩 File Size* : ${MDF[0].size}
-*📌File Format* : ${MDF[0].mime}
+*⿻ File Name* : ${MDF[0].nama}
+*⿻ File Size* : ${MDF[0].size}
+*⿻ File Format* : ${MDF[0].mime}
 
 Downloading...`
 
