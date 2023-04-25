@@ -7,7 +7,7 @@ module.exports = {
   desc: "To get concurrent group link.",
   category: "Group",
   usage: "gclink",
-  react: "🍁",
+  react: "🔗",
   start: async (Miku, m, { prefix, isBotAdmin, isAdmin, metadata, mime }) => {
 
     if (!isBotAdmin) return m.reply(mess.botadmin);
@@ -26,7 +26,7 @@ module.exports = {
         m.from,
         {
           image: { url: ppgc, mimetype: "image/jpeg" },
-          caption: `\n_🎀 Group Name:_ *${metadata.subject}*\n\n_🔷 Group Link:_\n${linkcode}\n`,
+          caption: `\n_*⿻* Group Name:_ *${metadata.subject}*\n\n_*⿻* Group Link:_\n${linkcode}\n`,
         },
         { quoted: m }
       );
