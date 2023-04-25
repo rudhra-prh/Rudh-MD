@@ -18,7 +18,7 @@ module.exports = {
     ];*/
     let neko = {
       image: { url: maids.data.url },
-      caption: `Here I am Oujou Sama...!!`,
+      caption: `ᴍᴀᴅᴇ ʙʏ ${botName}`,
       /*footer: `*${botName}*`,
       buttons: Button,
       headerType: 4,*/
