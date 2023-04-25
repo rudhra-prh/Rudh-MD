@@ -13,7 +13,7 @@ global.sessionId = process.env.SESSION_ID || "Rudhra3";
 global.prefa = process.env.PREFIX || ",";
 global.tenorApiKey =
   process.env.TENOR_API_KEY || "AIzaSyCyouca1_KKy4W_MG1xsPzuku5oa8W358c";
-global.packname = process.env.PACKNAME || `.Ʀ ᴜ ᴅ ʜ ʀ λ`;
+global.packname = process.env.PACKNAME || `Ʀ ᴜ ᴅ ʜ ʀ λ`;
 global.author = process.env.AUTHOR || "Ƥ ʀ ɪ ɴ ᴄ ᴇ  Ʀ ᴜ ᴅ ʜ";
 global.port = process.env.PORT || "8000";
 
