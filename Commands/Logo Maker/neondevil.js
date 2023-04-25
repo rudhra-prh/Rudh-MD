@@ -4,12 +4,12 @@ module.exports = {
     name: "neondevil",
     alias: ["ndevil","nd","neond"],
     desc: "Make text logo.",
-    react: "🍁",
+    react: "🛡️",
     category: "Logo Maker",
     start: async(Miku, m,{pushName,prefix,text}) => {
         if(!text) return m.reply(`Example: *${prefix}neondevil Atlas Bot*`);
         maker.textpro("https://textpro.me/create-neon-devil-wings-text-effect-online-free-1014.html", [
-`${text}`,]).then((data) => Miku.sendMessage(m.from, { image: { url: data }, caption: `Made by ${botName}` }, { quoted: m }))
+`${text}`,]).then((data) => Miku.sendMessage(m.from, { image: { url: data }, caption: `ᴍᴀᴅᴇ ʙʏ ${botName}` }, { quoted: m }))
     .catch((err) => m.reply('An Error occued !'));
     }
 }
