@@ -4,7 +4,7 @@ module.exports = {
     desc: "To download a tiktok video",
     category: "Media",
     usage: `tiktok <song link>`,
-    react: "🍁",
+    react: "🎬",
     start: async (Miku, m, { text, prefix, args, mime }) => {
       if (!args[0])
         return Miku.sendMessage(
@@ -43,9 +43,9 @@ module.exports = {
             caption: `
             *『 Tiktok Downloader 』*
       
-*🧩 Video Url :* _${args[0]}_\n\n
+*⿻ Video Url :* _${args[0]}_\n\n
 
-*📌 Select the format*
+*⿻ Select the format*
 
 *${prefix}tiktokmp3 <link>*
 *${prefix}tiktokmp4 <link>*
