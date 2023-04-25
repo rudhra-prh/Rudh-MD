@@ -9,7 +9,7 @@ module.exports = {
   cool: 30,
   category: "Media",
   usage: `ytdoc <song link>`,
-  react: "🍁",
+  react: "📥",
   start: async (Miku, m, { text, prefix, args, mime }) => {
     if (!args[0])
       return Miku.sendMessage(
@@ -28,7 +28,7 @@ module.exports = {
 
         if (length >= 1800) {
           return m.reply(
-            "Command Rejected! The audio is more than 30 minutes long BAKA! "
+            "Command Rejected! The audio is more than 30 minutes long "
           );
         } else {
           const ytaud =  YT.mp3(text).then((file) => {
