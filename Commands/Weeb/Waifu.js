@@ -4,7 +4,7 @@ module.exports = {
   name: "waifu",
   alias: ["swaifu", "wify"],
   desc: "Get anime girls picture.",
-  react: "🥵",
+  react: "👲",
   category: "Weeb",
   start: async (Miku, m, { pushName, prefix }) => {
     let waifus = await axios.get("https://api.waifu.pics/sfw/waifu");
@@ -18,7 +18,7 @@ module.exports = {
     ];*/
     let waf = {
       image: { url: waifus.data.url },
-      caption: `Here I am senpai !`,
+      caption: `ᴍᴀᴅᴇ ʙʏ ${botName}`,
       /*footer: `*${botName}*`,
       buttons: Button,
       headerType: 4,*/
