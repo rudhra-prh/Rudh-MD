@@ -4,7 +4,7 @@ module.exports = {
   name: "oppai",
   alias: ["boobs", "oppais"],
   desc: "Get anime bog boobs girls picture.",
-  react: "🥵",
+  react: "😁",
   category: "Weeb",
   start: async (Miku, m, { pushName, prefix }) => {
     let oppai = await axios.get("https://nekosenpai-apis.onrender.com/oppai");
@@ -18,7 +18,7 @@ module.exports = {
     ];*/
     let oppais = {
       image: { url: oppai.data.url },
-      caption: `Do you love Oppai too ${pushName} Senpai... ?`,
+      caption: `Do you love Oppai too ${pushName} ?`,
       /*footer: `*${botName}*`,
       buttons: Button,
       headerType: 4,*/
