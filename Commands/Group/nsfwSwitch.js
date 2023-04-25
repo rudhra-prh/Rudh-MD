@@ -6,7 +6,7 @@ module.exports = {
     desc: "Enable or disable NSFW commands in a group",
     category: "Group",
     usage: "nsfw [on/off]",
-    react: "🎀",
+    react: "⚠️",
     start: async (
       Miku,
       m,
