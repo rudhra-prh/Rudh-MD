@@ -4,12 +4,12 @@ const yts = require("youtube-yts");
 
 module.exports = {
   name: "ytad",
-  alias: ["mp3", "ytmp3", "ytmusic"],
+  alias: ["song", "ytmp3", "ytmusic"],
   desc: "To download a song as mp3 from YouTube link",
   cool: 30,
   category: "Media",
   usage: `ytad <song link>`,
-  react: "🍁",
+  react: "🎵",
   start: async (Miku, m, { text, prefix, args, mime }) => {
     if (!args[0])
       return Miku.sendMessage(
