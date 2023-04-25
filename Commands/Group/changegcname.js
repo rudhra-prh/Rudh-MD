@@ -1,6 +1,6 @@
 module.exports = {
   name: "setgcname",
-  alias: ["setnamegc", "changegcname", "setgroupname", "changegroupname"],
+  alias: ["setnamegp", "changegpname", "gpname", "changegroupname"],
   desc: "Change the group name",
   category: "Group",
   usage: `setgcname <New group name>`,
@@ -31,7 +31,7 @@ module.exports = {
           m.from,
           {
             image: { url: ppgc, mimetype: "image/jpeg" },
-            caption: `*『 Group Name Changed 』*\n\n_🔶 Old Name:_\n*${oldGCName}*\n\n_🔷 New Name:_\n*${args.join(
+            caption: `*『 Group Name Changed 』*\n\n_*⿻* Old Name:_\n*${oldGCName}*\n\n_*⿻* New Name:_\n*${args.join(
               " "
             )}*\n`,
           },
