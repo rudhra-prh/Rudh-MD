@@ -8,7 +8,7 @@ module.exports = {
   desc: "To play a video from youtube",
   category: "Media",
   usage: `video <song name>`,
-  react: "🍁",
+  react: "🎬",
   start: async (Miku, m, { text, prefix, args }) => {
     try {
       if (!args[0])
