@@ -3,11 +3,11 @@ const { webp2mp4File } = require("../../lib/uploader");
 
 module.exports = {
   name: "tomp4",
-  alias: ["tovideo", "stickertovideo"],
+  alias: ["tovideo", "mp4"],
   desc: "To get Video from sticker",
   category: "Utilities",
   usage: "tomp4 <reply to animated sticker>",
-  react: "🍁",
+  react: "🎬",
   start: async (Miku, m, { text, prefix, quoted, pushName, mime, body }) => {
     if (/webp/.test(mime)) {
       let mediaMess = await Miku.downloadAndSaveMediaMessage(quoted);
@@ -17,7 +17,7 @@ module.exports = {
         m.from,
         {
           video: { url: webpToMp4.result },
-          caption: `_Converted by:_  *${botName}*\n`,
+          caption: `ᴄᴏɴᴠᴇʀᴛᴇᴅ ʙʏ ${botName}\n`,
         },
         { quoted: m }
       );
