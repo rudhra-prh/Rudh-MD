@@ -44,7 +44,7 @@ module.exports = {
             {
               text: `Congratulations @${
                 mentionedUser.split("@")[0]
-              } Senpai 🥳, you have been *Promoted* Successfully by *${pushName}* !`,
+              } 🥳, you have been *Promoted* Successfully by *${pushName}* !`,
               mentions: [mentionedUser],
             },
             { quoted: m }
