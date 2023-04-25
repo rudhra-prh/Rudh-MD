@@ -29,7 +29,7 @@ module.exports = {
 
     await Miku.sendMessage(
       m.from,
-      { image: result, caption: "Here it is...\n" },
+      { image: result, caption: "ᴄʀᴇᴀᴛᴇᴅ ʙʏ ${botName}" },
       { quoted: m }
     );
   },
