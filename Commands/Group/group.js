@@ -4,7 +4,7 @@ module.exports = {
   desc: "Open / Close Group",
   category: "Group",
   usage: `group open/close`,
-  react: "🍁",
+  react: "⚙️",
   start: async (
     Miku,
     m,
