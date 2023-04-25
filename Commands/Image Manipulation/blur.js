@@ -6,7 +6,7 @@ module.exports = {
   desc: "To make a blurred image",
   category: "Image Manipulation",
   usage: "blur <reply to image>",
-  react: "🍁",
+  react: "🖼️",
   start: async (Miku, m, { text, prefix, quoted, pushName, mime, body }) => {
     if (!m.quoted && !/image/.test(mime))
       return m.reply("Please tag someone ! or mention a picture !");
@@ -33,7 +33,7 @@ module.exports = {
       if (!err) {
         Miku.sendMessage(
           m.from,
-          { image: buffer, caption: `_Created by:_ *${botName}*` },
+          { image: buffer, caption: `ᴄʀᴇᴀᴛᴇᴅ ʙʏ ${botName}` },
           { quoted: m }
         );
       } else {
