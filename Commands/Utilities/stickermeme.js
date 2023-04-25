@@ -11,7 +11,7 @@ module.exports = {
     react: "🃏",
     start: async (Miku, m, { text, prefix,quoted,pushName,mime,body }) => {
         if (/image/.test(mime)) {
-            m.reply(`Chotto Matte...`)
+            m.reply(`ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ...`)
             media = await Miku.downloadAndSaveMediaMessage(quoted)
             mem = await TelegraPh(media)
             meme = `https://api.memegen.link/images/custom/-/${text}.png?background=${mem}`
