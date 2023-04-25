@@ -26,7 +26,7 @@ module.exports = {
 
       if (length >= 1800) {
         return m.reply(
-          "Command Rejected! The audio is more than 30 minutes long BAKA! "
+          "Command Rejected! The audio is more than 30 minutes long "
         );
       } else {
         const ytaud =  YT.mp3(text).then((file) => {
