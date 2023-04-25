@@ -3,11 +3,11 @@ const remobg = require("remove.bg");
 
 module.exports = {
   name: "removebg",
-  alias: ["backgroungerase"],
+  alias: ["bgremove"],
   desc: "To remove backgroung of an image",
   category: "Image Manipulation",
   usage: "removebg <reply to image>",
-  react: "🍁",
+  react: "🖼️",
   start: async (Miku, m, { text, prefix, quoted, pushName, mime, body }) => {
     if (!m.quoted && !/image/.test(mime))
       return m.reply(
@@ -71,8 +71,8 @@ module.exports = {
       "cX3yucYC6KGb9U7ZqetGz91z",
     ];
     let rbgKEY = rbgKEYS[Math.floor(Math.random() * rbgKEYS.length)];
-    let filename = (await "./Assets/removeBgIN");
-    let outputFile = (await "./Assets/removeBgOUT.png");
+    let filename = (await "./Media/removeBgIN");
+    let outputFile = (await "./Media/removeBgOUT.png");
     let qFile = await Miku.downloadAndSaveMediaMessage(quoted);
 
     var bgRempic = await remobg.removeBackgroundFromImageFile({
@@ -88,7 +88,7 @@ module.exports = {
       m.from,
       {
         image: fs.readFileSync(outputFile),
-        caption: `_Created by: *${botName}*_`,
+        caption: `ᴄʀᴇᴀᴛᴇᴅ ʙʏ ${botName}`,
       },
       { quoted: m }
     )
