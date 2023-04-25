@@ -32,7 +32,7 @@ module.exports = {
           image: {
             url: wallpapers[randomIndex].image,
           },
-          caption: `*Search term:* ${im[0]}`,
+          caption: `*Search term* : ${im[0]} \n ᴍᴀᴅᴇ ʙʏ ${botName}`,
           footer: `*${botName}*`,
         },
         {
