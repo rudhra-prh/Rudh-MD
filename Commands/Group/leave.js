@@ -26,10 +26,10 @@ module.exports = {
       });
 
     if (modStatus == "false" && !isCreator && !isAdmin)
-      return m.reply("Sorry, only *Group Admins* and *Mods* can use this command !");
+      return m.reply("Sorry, only *Group Admins* and *Owner* can use this command !");
 
     await Miku.sendMessage(m.from, {
-      image: { url: "https://wallpapercave.com/wp/wp9667218.png" },
+      image: { url: "https://i.imgur.com/XQFNJDp.jpeg" },
       caption: `I'm Leaving this group on request... \n\nTake care everyone :)`,
       mentions: participants.map((a) => a.id),
       quoted: m,
