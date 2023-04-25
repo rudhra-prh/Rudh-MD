@@ -3,12 +3,12 @@ const { exec } = require("child_process");
 const fs = require("fs");
 
 module.exports = {
-  name: "toimg",
+  name: "photo",
   alias: ["topic","topicture", "toimage"],
   desc: "To get image from sticker",
   category: "Utilities",
   usage: "toimg <reply to non-animated sticker>",
-  react: "🍁",
+  react: "🖼️",
   start: async (Miku, m, { text, prefix, quoted, pushName, mime, body }) => {
     if (/webp/.test(mime)) {
       let mediaMess = await Miku.downloadAndSaveMediaMessage(quoted)
@@ -20,7 +20,7 @@ module.exports = {
             return;
         }
         let buffer = fs.readFileSync(ran);
-        Miku.sendMessage(m.from, { image: buffer, caption:`_Converted by:_  *${botName}*\n` }, { quoted: m });
+        Miku.sendMessage(m.from, { image: buffer, caption:`ᴄᴏɴᴠᴇʀᴛᴇᴅ ʙʏ *${botName}*\n` }, { quoted: m });
         fs.unlinkSync(ran);
       });
     } else {
