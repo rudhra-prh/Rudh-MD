@@ -9,7 +9,7 @@ module.exports = {
   desc: "To make a triggered image",
   category: "Image Manipulation",
   usage: "trigger <reply to image / mention user>",
-  react: "🍁",
+  react: "🖼️",
   start: async (Miku, m, { text, prefix, quoted, pushName, mime, body }) => {
     if (!m.quoted && !/image/.test(mime))
       return m.reply("Please tag someone ! or mention a picture !");
@@ -30,7 +30,7 @@ module.exports = {
       );
     }
 
-    let triggerd = await fs.readFileSync("./Assets/Img/triggered.png");
+    let triggerd = await fs.readFileSync("./Media/Img/triggered.png");
 
     const getImage = async (image, timeout = 15) => {
       const img = await Canvas.loadImage(image);
