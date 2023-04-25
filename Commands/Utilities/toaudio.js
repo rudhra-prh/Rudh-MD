@@ -1,12 +1,12 @@
 let {toAudio} = require('../../lib/File-Converter.js');
 
 module.exports = {
-    name: "toaudio",
-    alias: ["getaudio"],
+    name: "mp3",
+    alias: ["toaudio"],
     desc: "To get audio file from a voice note or video",
     category: "Utilities",
     usage: "toaudio <reply to audio/video>",
-    react: "🍁",
+    react: "🎵",
     start: async (Miku, m, { text, prefix, quoted, pushName, mime, body }) => {
         if (!/video/.test(mime) && !/audio/.test(mime)) return m.reply(`Send/Reply Video/Audio You Want To Convert Into Audio With Caption *${prefix}tomp3*`);
         if (!m.quoted) return m.reply(`Send/Reply Video/Audio You Want To Convert Into Audio With Caption ${prefix}tomp3`);
