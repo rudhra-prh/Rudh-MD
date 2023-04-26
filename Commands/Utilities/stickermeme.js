@@ -3,11 +3,11 @@ let { TelegraPh } = require("../../lib/uploader");
 const fs = require("fs");
 
 module.exports = {
-    name: "stickerme",
-    alias: ["takeme"],
-    desc: "To make sticker me",
+    name: "stickermeme",
+    alias: ["smeme"],
+    desc: "To make sticker meme",
     category: "Utilities",
-    usage: "takeme <reply to image>",
+    usage: "smeme <reply to image>",
     react: "🃏",
     start: async (Miku, m, { text, prefix,quoted,pushName,mime,body }) => {
         if (/image/.test(mime)) {
@@ -17,8 +17,8 @@ module.exports = {
             meme = `https://api.memegen.link/images/custom/-/${text}.png?background=${mem}`
 
             let stickerMess = new Sticker(meme, {
-                pack: pushName,
-                author: packname,
+                pack: packname,
+                author: author,
                 type: StickerTypes.FULL,
                 categories: ['🤩', '🎉'],
                 id: '12345',
@@ -31,7 +31,7 @@ module.exports = {
             fs.unlinkSync(media);
             }
             else{
-                m.reply(`Please mention an *image* and type *${prefix}takeme* to create sticker me.`);
+                m.reply(`Please mention an *image* and type *${prefix}smeme* to create sticker meme.`);
             }
         }
     }
