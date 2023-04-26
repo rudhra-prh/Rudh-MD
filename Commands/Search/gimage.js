@@ -6,7 +6,7 @@ module.exports = {
   desc: "To get google image search result",
   category: "Search",
   usage: `gig <search term>`,
-  react: "🍁",
+  react: "🖼️",
   start: async (Miku, m, { text, prefix, args }) => {
     if (!args[0])
       return Miku.sendMessage(
@@ -20,7 +20,7 @@ module.exports = {
       n = result;
       images = n[Math.floor(Math.random() * n.length)].url;
 
-      let resText = `\n_🎀 Image Search Term:_ *${ImagesearchTerm}*\n\n_🧩 Powered by_ *${botName}*\n`;
+      let resText = `\n_⿻ Image Search Term:_ *${ImagesearchTerm}*\n\n ᴍᴀᴅᴇ ʙʏ ${botName}\n`;
 
       /*
       let buttons = [
