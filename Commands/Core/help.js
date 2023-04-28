@@ -299,9 +299,22 @@ const now = new Date();
 ╰──────────────────╯\n\n`;
       }
 
-      textHelpMenu += `  ${botName}  \n`;
+      let buttons = [
+        {
+          buttonId: `${prefix}repo`,
+          buttonText: { displayText: "ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ" },
+          type: 1,
+        },
+      ];
+      let buttonMessage = {
+        image: { url: botImage1 },
+        caption: textHelpMenu,
+        buttons: buttons,
+        footer: `${botName}`,
+        headerType: 4,
+      };
 
-      await Miku.sendMessage(m.from, {image: { url: botImage1 }, caption: textHelpMenu,}, { quoted: m });
+      await Miku.sendMessage(m.from, buttonMessage, { quoted: m });
     }
   },
 };
