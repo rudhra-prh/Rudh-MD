@@ -31,12 +31,12 @@ module.exports = {
     yts({ videoId }).then((result) => {
       YT.mp3(videoId).then((file) => {
         const inputPath = file.path;
-        const outputPath = inputPath + ".opus";
+        const outputPath = inputPath + ".mp3";
 
         ffmpeg(inputPath)
-          .format("opus")
+          .format("mp3")
           .on("error", (err) => {
-            console.error("Error converting to opus:", err);
+            console.error("Error converting to mp3:", err);
           })
           .on("end", async () => {
             const thumbnailBuffer = await getBuffer(song.thumbnail);
@@ -45,8 +45,7 @@ module.exports = {
               m.from,
               {
                 audio: fs.readFileSync(outputPath),
-                mimetype: "audio/ogg; codecs=opus",
-                ptt: true,
+                mimetype: "audio/mp4",
                 contextInfo: {
                   externalAdReply: {
                     title: song.title.substr(0, 30),
