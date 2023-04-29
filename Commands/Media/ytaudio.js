@@ -4,7 +4,7 @@ const yts = require("youtube-yts");
 
 module.exports = {
   name: "ytad",
-  alias: ["song", "ytmp3", "ytmusic"],
+  alias: ["ytsong", "ytmp3", "ytmusic"],
   desc: "To download a song as mp3 from YouTube link",
   cool: 30,
   category: "Media",
