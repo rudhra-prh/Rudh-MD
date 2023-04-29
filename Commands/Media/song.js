@@ -9,7 +9,7 @@ ffmpeg.setFfmpegPath(ffmpegPath);
 
 module.exports = {
   name: "play",
-  alias: ["yt"song"],
+  alias: ["yt", "song"],
   desc: "To download a song as mp3 from YouTube link",
   cool: 30,
   category: "Media",
