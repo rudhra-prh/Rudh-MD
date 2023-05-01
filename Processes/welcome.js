@@ -29,11 +29,11 @@ module.exports = async (Miku, anu) => {
           }\n`
         );
         mikutext = `
-Hello @${WAuserName.split("@")[0]} Senpai,
+Hello @${WAuserName.split("@")[0]},
 
 Welcome to *${metadata.subject}*.
 
-*🧣 Group Description 🧣*
+*Group Description*
 
 ${desc}
 
