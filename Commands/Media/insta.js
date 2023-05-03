@@ -23,10 +23,10 @@ module.exports = {
     
 
       var queryURL = args.join(" ");
-      m.reply("*_ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ..._*")
+      m.reply("*ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ...*")
       let res = await axios.get("https://fantox001-scrappy-api.vercel.app/instadl?url=" + queryURL)
       const scrappedURL = res.data.videoUrl
       
-      return Miku.sendMessage(m.from, { video: { url: scrappedURL }, caption: `_ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ ʙʏ ʀᴜᴅʜʀᴀ_ \n`},{ quoted: m } );
+      return Miku.sendMessage(m.from, { video: { url: scrappedURL }, caption: ` `},{ quoted: m } );
   },
 };
