@@ -8,7 +8,7 @@ module.exports = {
   usage: `insta <video link>`,
   react: "📥",
   start: async (Miku, m, { text, prefix, args }) => {
-    if (!args[0] && !m.quoted)
+    if (!args[0])
       return Miku.sendMessage(
         m.from,
         { text: `ᴘʟᴇᴀꜱᴇ ᴘʀᴏᴠɪᴅᴇ ᴀ ɪɴꜱᴛᴀɢʀᴀᴍ ᴠɪᴅᴇᴏ ʟɪɴᴋ !` },
