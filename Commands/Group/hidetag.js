@@ -10,31 +10,18 @@ module.exports = {
     m,
     { text, prefix, isAdmin, participants, args }
   ) => {
-    if (!isAdmin)
-      return m.reply(mess.useradmin);
-
-      var message = "*『 Attention Here 』*";
-
-    if(m.quoted){
-        message = "*『 Attention Here 』*";
-      }
-    else if (!text && m.quoted) {
-      message = `${m.quoted ? m.quoted.msg : ''}`;
-    }
-    else if(args[0]){
-      message = args.join(' ');
-    }
-    else if(text ===''){
-      message = "*『 Attention Here 』*";
-    }
-   
-    else{
-      message = "*『 Attention Here 』*";
-    }
-    await Miku.sendMessage(
-      m.from,
-      { text: message, mentions: participants.map((a) => a.id) },
-      { quoted: m }
+    if (!m.isGroup) return m.reply(tlang().group);
+            const groupMetadata = m.isGroup ? await Miku.groupMetadata(m.chat).catch((e) => {}) : "";
+            const participants = m.isGroup ? await groupMetadata.participants : "";
+            const groupAdmins = await getAdmin(Miku, m)
+            const isAdmins = m.isGroup ? groupAdmins.includes(m.sender) : false;
+            if (!isAdmins) return m.reply(mess.useradmin);
+            if (!isAdmins) m.reply(mess.useradmin);
+            Miku.sendMessage(m.chat, {
+                text: text ? text : "",
+                mentions: participants.map((a) => a.id),
+            }, {
+                quoted: m,
     );
   },
 };
