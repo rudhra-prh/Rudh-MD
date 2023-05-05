@@ -8,12 +8,12 @@ const ffmpegPath = require("@ffmpeg-installer/ffmpeg").path;
 ffmpeg.setFfmpegPath(ffmpegPath);
 
 module.exports = {
-  name: "play",
-  alias: ["yt", "song"],
+  name: "song",
+  alias: ["ytsong"],
   desc: "To download a song as mp3 from YouTube link",
   cool: 30,
   category: "Media",
-  usage: `ytad <song link>`,
+  usage: `song <song link>`,
   react: "🎵",
   start: async (Miku, m, { text, prefix, args, mime }) => {
     if (!args[0])
