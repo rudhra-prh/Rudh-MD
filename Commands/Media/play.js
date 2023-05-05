@@ -19,12 +19,12 @@ module.exports = {
     const song = songInfo.videos[0];
     let buttons = [
       {
-        buttonId: `${prefix}ytad ${song.url}`,
+        buttonId: `${prefix}song ${song.url}`,
         buttonText: { displayText: "♬ Audio" },
         type: 1,
       },
       {
-        buttonId: `${prefix}ytvd ${song.url}`,
+        buttonId: `${prefix}video ${song.url}`,
         buttonText: { displayText: "▶ Video" },
         type: 1,
       },
