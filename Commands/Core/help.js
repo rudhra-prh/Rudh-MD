@@ -318,7 +318,7 @@ const now = new Date();
         thumbnail: fs.readFileSync("Media/Img/rudhthumb.jpg"),
         mediaType:1,
         mediaUrl: 'https://instagram.com/princerudh',
-        sourceUrl: 'https://instagram.com/princerudh',
+
       }
       }
 
