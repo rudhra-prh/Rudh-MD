@@ -317,9 +317,10 @@ const now = new Date();
         body: "ᴛʜᴇ ᴄʀᴏᴡɴʟᴇꜱꜱ ᴩʀɪɴᴄᴇ", 
         thumbnail: fs.readFileSync("Media/Img/rudhthumb.jpg"),
         mediaType:1,
-        mediaUrl: 'https://i.imgur.com/SgE4eRi.png',
-        sourceUrl: "https://instagram.com/princerudh"
-      }}
+        mediaUrl: 'https://instagram.com/princerudh',
+        sourceUrl: 'https://instagram.com/princerudh',
+      }
+      }
 
 }
 
