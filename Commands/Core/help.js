@@ -319,7 +319,9 @@ const now = new Date();
         mediaType:1,
         mediaUrl: 'https://i.imgur.com/SgE4eRi.png',
         sourceUrl: "https://instagram.com/princerudh"
-      };
+      }}
+
+}
 
       await Miku.sendMessage(m.from, buttonMessage, { quoted: m });
     }
