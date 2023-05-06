@@ -315,7 +315,7 @@ const now = new Date();
         contextInfo:{externalAdReply:{
         title:"Ʀ ᴜ ᴅ ʜ ʀ λ",
         body: "ᴛʜᴇ ᴄʀᴏᴡɴʟᴇꜱꜱ ᴩʀɪɴᴄᴇ", 
-        thumbnail: fs.readFileSync("Media/Img/rudhthumb.png"),
+        thumbnail: fs.readFileSync("Media/Img/rudhthumb.jpg"),
         mediaType:1,
         mediaUrl: 'https://i.imgur.com/SgE4eRi.png',
         sourceUrl: "https://instagram.com/princerudh"
