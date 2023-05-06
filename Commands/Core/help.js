@@ -1,3 +1,5 @@
+const { getBuffer } = require("../../lib/myfunc");
+const fs = require("fs");
 module.exports = {
   name: "help",
   alias: ["menu", "h", "helpm", "helpmenu"],
@@ -312,7 +314,15 @@ const now = new Date();
         buttons: buttons,
         footer: `${botName}`,
         headerType: 4,
-      };
+        contextInfo:{externalAdReply:{
+        title:"Ʀ ᴜ ᴅ ʜ ʀ λ",
+        body: "ᴛʜᴇ ᴄʀᴏᴡɴʟᴇꜱꜱ ᴩʀɪɴᴄᴇ", 
+        thumbnail: fs.readFileSync("Media/Img/rudhthumb.png"),
+        mediaType:1,
+        mediaUrl: 'https://instagram.com/princerudh',
+        sourceUrl: "https://instagram.com/princerudh"
+      }
+      }
 
       await Miku.sendMessage(m.from, buttonMessage, { quoted: m });
     }
