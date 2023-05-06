@@ -312,17 +312,7 @@ const now = new Date();
         buttons: buttons,
         footer: `${botName}`,
         headerType: 4,
-        contextInfo:{externalAdReply:{
-        title:"Ʀ ᴜ ᴅ ʜ ʀ λ",
-        body: "ᴛʜᴇ ᴄʀᴏᴡɴʟᴇꜱꜱ ᴩʀɪɴᴄᴇ", 
-        thumbnail: fs.readFileSync("Media/Img/rudhthumb.jpg"),
-        mediaType:1,
-        mediaUrl: 'https://instagram.com/princerudh',
-
-      }
-      }
-
-}
+      };
 
       await Miku.sendMessage(m.from, buttonMessage, { quoted: m });
     }
